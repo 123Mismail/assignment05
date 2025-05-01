@@ -12,3 +12,9 @@ dependencies = [
     "python-dotenv>=1.0.0",     # From your requirements.txt
     "tzlocal>=5.2",             # From your requirements.txt
 ]
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["."]  # Tells Python your package is in the root directory
