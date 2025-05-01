@@ -1,20 +1,22 @@
+cat > pyproject.toml << 'EOF'
 [project]
 name = "my-app"
 version = "0.1.0"
-description = "Add your description here"
+description = "Your app description"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.10"
 dependencies = [
-    "streamlit>=1.32.0",        # Explicitly add Streamlit
-    "cryptography>=42.0.0",     # Required for Fernet
-    "fernet>=1.0.1",            # (Optional: Check if you really need this separately)
-    "pyjwt>=2.8.0",             # From your requirements.txt
-    "python-dotenv>=1.0.0",     # From your requirements.txt
-    "tzlocal>=5.2",             # From your requirements.txt
+    "streamlit>=1.32.0",
+    "cryptography>=42.0.0",
+    "pyjwt>=2.8.0",
+    "python-dotenv>=1.0.0",
+    "tzlocal>=5.2"
 ]
+
 [build-system]
 requires = ["setuptools>=42"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["."]  # Tells Python your package is in the root directory
+packages = ["."]
+EOF
