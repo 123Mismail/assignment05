@@ -1,0 +1,5 @@
+cryptography>=42.0.0
+streamlit>=1.32.0
+pyjwt>=2.8.0
+python-dotenv>=1.0.0
+tzlocal>=5.2
