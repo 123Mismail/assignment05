@@ -5,5 +5,10 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "fernet>=1.0.1",
+    "streamlit>=1.32.0",        # Explicitly add Streamlit
+    "cryptography>=42.0.0",     # Required for Fernet
+    "fernet>=1.0.1",            # (Optional: Check if you really need this separately)
+    "pyjwt>=2.8.0",             # From your requirements.txt
+    "python-dotenv>=1.0.0",     # From your requirements.txt
+    "tzlocal>=5.2",             # From your requirements.txt
 ]
